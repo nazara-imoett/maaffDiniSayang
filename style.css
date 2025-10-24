@@ -1,0 +1,76 @@
+/* 🌈 Latar biru pastel dengan efek bintang */
+body {
+  background: linear-gradient(180deg, #cbe8ff, #e3f2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Comic Sans MS', cursive;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ✨ Efek bintang lembut */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent url('https://i.ibb.co/vkC3s1G/stars.png') repeat;
+  animation: twinkle 10s linear infinite;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+@keyframes twinkle {
+  from { background-position: 0 0; }
+  to { background-position: -1000px 1000px; }
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: #6fa8dc;
+  font-size: 1.9em;
+  text-shadow: 1px 1px #ffffff;
+}
+
+#cat-container {
+  position: relative;
+  margin-top: 10px;
+}
+
+#cat {
+  width: 220px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+/* animasi loncat */
+.jump {
+  animation: jump 0.5s ease;
+}
+
+@keyframes jump {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-25px); }
+  60% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+#message {
+  margin-top: 18px;
+  font-size: 1.1em;
+  color: #2e4a6a;
+  background: #e9f6ff;
+  padding: 14px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-height: 50px;
+  transition: 0.3s;
+}

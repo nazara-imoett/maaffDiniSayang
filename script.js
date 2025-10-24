@@ -3,16 +3,16 @@ const message = document.getElementById('message');
 const meowSound = document.getElementById('meow-sound');
 
 const messages = [
-  "Hai Dini~ jangan ngambek ya 😽",
-  "Kucing ini pengin Dini senyum lagi 🐾",
-  "Meow~ aku kangen Dini 💕",
-  "Kalau Dini bahagia, langit juga ikut biru 🌤️",
-  "Rasya udah siapin mie ayam kesukaan kamu 🍜",
-  "Kamu itu cahaya biru tenang buat kucing ini 😺",
-  "Boleh ngambek, tapi jangan lama-lama ya 💙",
+  "Hai Dini Sayangkuu~ jangan ngambek yaaaaaa 😽",
+  "mengggg ini pengin Dini senyum lagi(sebenernya aqoeeehhh mwehehehe) 🐾",
+  "Meowww~ aku kangen Dinii 💕",
+  "Kalau qamoeee bahagia, mas teknik ini juga bahagiaa 🌤️",
+  "sinii sinii ku suapinn mie ayam beebbb 🍜",
+  "qamoeee imoettt bangett beebb  😺",
+  "Boleh ngambek, tapi jangan lama-lama yaawww 🫶",
   "Kucing ini bakal meong tiap Dini senyum~ 😻",
   "Dini + Rasya = duo paling manis di dunia 🫶",
-  "MeowDini bilang: ‘aku sayang kamu’ 💫"
+  "aku sayang kamu 💫"
 ];
 
 let happy = false;
@@ -34,3 +34,4 @@ cat.addEventListener('click', () => {
   const randomMsg = messages[Math.floor(Math.random() * messages.length)];
   message.textContent = randomMsg;
 });
+
